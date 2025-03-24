@@ -72,6 +72,10 @@ section > p {
 section address{
     padding: 0 1.0rem;
 }
+address{
+    font-style: normal;
+    color: #cd0808;
+}
 footer p{
     border: 0;
     text-align: center;

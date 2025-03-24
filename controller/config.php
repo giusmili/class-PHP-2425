@@ -4,5 +4,7 @@
     $version = phpVersion();
     const title = "PHP started version";
     $date = new DateTime(); # instance de class DateTime
-   
+    $navigator = $_SERVER['HTTP_USER_AGENT'];
+    $remote = $_SERVER['SERVER_ADDR'];
+    $signature = $_SERVER['SERVER_SIGNATURE']
 ?>
