@@ -16,7 +16,7 @@
 	<header>
 		<h1>
 			🚀 
-			PHP started version 8
+			PHP started version 8.2
 		</h1>
 	</header>
 	<main>
