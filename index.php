@@ -2,56 +2,39 @@
 	include_once __DIR__ .'/controller/config.php';
 	
 	# inclusion de la configuration /* */
+
+	include_once __DIR__ .'/partial/head.inc.php';
+
+	# head
+
 ?>
 
-<!DOCTYPE html>
-<html lang="<?php print $lang[0] ?>">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php print title." ".$version ?></title>
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="stylesheet" href="<?= css ?>">
-</head>
+
 <body>
+
+<?php
 	
-	<header>
-		<h1>
-			🚀 
-			<?= title." ".$version?>
-		</h1>
-	</header>
-	<main>
-        <figure>
-            <img src="./asset/cover.svg" alt="cover php">
-            <figcaption>
-                <h2>
-                    PHP version <?= $version ?> <!-- à la place de "print" ou "echo"  -->
-                </h2>
-            </figcaption>
-        </figure>
-		<section>
-			<h2>Nous sommes le : 10-01-2021</h2>
-			<p>
-				Votre navigateur est : Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:84.0) Gecko/20100101 Firefox/84.0<br>
-				Votre adress IP est le :127.0.0.1
-				<br>Signature serveur
-				
-			</p>
-			<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1g PHP/7.2.34 Server at localhost Port 80</address>
-		</section>
-	</main>
-	<!-- <pre>
-	</pre> -->
-	<footer>
-		<p>&copy; - MIT - <time datetime="<?= $date->format('Y-m-d') ?>">
-			<?= $date->format('Y') ?>
-		</time>
-	</p>
-	</footer>
+	include_once __DIR__ .'/partial/header.inc.php';
+
+	# header
+?>
+<main>
+    <?php
+
+	include_once __DIR__ .'/partial/main.inc.php';
+
+	# main zone
+	 
+	?>
+</main>
+	<?php
+	include_once __DIR__ .'/partial/footer.inc.php';
+
+	# footer
+
+	?>
+	
+	<!-- footer -->
+
 	<!--cours https://hackmd.io/iNktz6XzRyu7gGmKvPpXfQ?view-->
 </html>
