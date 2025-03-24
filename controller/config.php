@@ -1,5 +1,8 @@
 <?php
-    const title = "PHP started version 8.2";
 	$lang = ["fr","en","it"];
-	const css = "./css/style.css"
+	const css = "./css/style.css";
+    $version = phpVersion();
+    const title = "PHP started version";
+    $date = new DateTime(); # instance de class DateTime
+   
 ?>
