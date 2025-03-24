@@ -1,22 +1,27 @@
+<?php 
+	include_once __DIR__ .'/controller/config.php'
+	# inclusion de la configuration /* */
+?>
+
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="<?php print $lang[0] ?>">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Started PHP</title>
+    <title><?php print title ?></title>
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="<?php print css ?>">
 </head>
 <body>
-	<!--cours https://hackmd.io/iNktz6XzRyu7gGmKvPpXfQ?view-->
+	
 	<header>
 		<h1>
 			🚀 
-			PHP started version 8.2
+			<?php print title ?>
 		</h1>
 	</header>
 	<main>
@@ -44,5 +49,5 @@
 	<footer>
 		<p>&copy; - MIT - 2021</p>
 	</footer>
-	
+	<!--cours https://hackmd.io/iNktz6XzRyu7gGmKvPpXfQ?view-->
 </html>
